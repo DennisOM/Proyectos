@@ -23,7 +23,7 @@ function para(){
 
     for(let i = 0; fair > i ; i++){
 
-        console.log("Fair:", fair, "i:", i+1);
+        console.log("Fair:", fair, "i:", i+1); //Importantes las comas para dividir el texto de los numeros
 
     }
 
@@ -37,7 +37,7 @@ function mientras(){
     let dair = 0;
 
     while( dair < fair){
-        dair++;
+        dair++; // ++ lo mismo de +=1, pero en el ultimo es para devidir el valor aumentado
     }
 
     console.log(dair);
@@ -49,11 +49,11 @@ function mientras(){
 function hacerMientras(){
 
     let dair = 0;
-    let resultado = "";
+    let resultado = ""; //la fakin cadena que como se considera texto, no se suma, se pone como texto literal... imbecil
 
     do{
         dair += 1;
-        resultado += dair; // resultado recive el valor de dair y agrega el siguiente segun avance
+        resultado += dair; // resultado recibe el valor de dair y agrega el siguiente segun avance
     } while(dair < 5);
 
     console.log(resultado) // OUTPUT: 12345
