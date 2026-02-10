@@ -1,4 +1,6 @@
 //If
+const fair = 100;
+
 function si(){
     let fair = 23;
     let fairCopia = "23";
@@ -14,11 +16,10 @@ function si(){
         console.log("Stock cancel");
     }
 }
-si();
+//si();
 
 // FOR
 function para(){
-    const fair = 100;
 
     for(let i = 0; fair > i ; i++){
 
@@ -28,12 +29,57 @@ function para(){
 
 }
 
-para();
+//para();
 
 // WHILE
 function mientras(){
+    
+    let dair = 0;
 
-    while(i < fair){
+    while( dair < fair){
+        dair++;
+    }
 
+    console.log(dair);
+}
+
+//mientras();
+
+//DO-WHILE
+function hacerMientras(){
+
+    let dair = 0;
+    let resultado = "";
+
+    do{
+        dair += 1;
+        resultado += dair; // resultado recive el valor de dair y agrega el siguiente segun avance
+    } while(dair < 5);
+
+    console.log(resultado) // OUTPUT: 12345
+
+}
+
+//hacerMientras();
+
+function elegir(){
+    const pj = "Terry"; 
+    switch(pj){
+        case "Mario":
+            console.log("Player de mario Kakita");
+            break;
+        case "Terry":
+            console.log("Player sin bañarse");
+            break;
+        case "DK":
+            console.log("Player SigmaBoy");
+            break;
+        case "KazuyaMISHIMA":
+            console.log("Abusa del electric");
+            break;
+        default:
+            console.log(`${pj}. No es un jugador considerado en la lista porque es suck`);
     }
 }
+
+elegir();
