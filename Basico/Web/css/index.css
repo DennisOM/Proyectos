@@ -40,15 +40,22 @@ p{
 
     margin: 0.9rem;
 }
+.divisor{   /* Este es un div que me ayuda a juntar tanto el article como el aside para poder dejarlos en horizontal*/
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 400px;
+}
 
 .articulo{
+    flex-direction: column; /* Todo el contenido lo vuelve en direccion vertical (Columna) */
     display: flex;
     justify-content: center;
     align-items: center;
 
     background-color: bisque;
-    width: 60%;
-    height: 45%;
+    width: 80%;
+    height: auto;
 
     margin: 0.9rem;
 }
@@ -60,7 +67,7 @@ p{
 
     background-color: lightgreen;
     width: 80%;
-    height: 8%;
+    height: 16%;
 
     margin: 0.9rem;
 }
@@ -71,7 +78,7 @@ p{
     align-items: center;
 
     background-color: bisque;
-    width: auto;
+    width: 20%;
     height: auto;
 
     margin: 0.9rem;
@@ -87,4 +94,8 @@ p{
     height: 15%;
 
     margin: 0.9rem;
+}
+#borde{
+    border: solid 1px;
+    border-color: blue
 }

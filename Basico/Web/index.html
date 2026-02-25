@@ -12,21 +12,28 @@
         <br>
         en HTML5
     </p>
-    <header class="encabezado"> 
+    <header class="encabezado" id="borde"> 
         header
     </header>
-    <nav class="navegador"> 
+    <nav class="navegador" id="borde"> 
         nav 
     </nav>
-    <article class="articulo">
-        article
-        <br>
-        <section class="seccion">section</section>
-        <section class="seccion">section</section>
-    </article>
-    <aside class="aside">
-        aside
-    </aside>
-    <footer class="pisado">En el piso como paloma</footer>
+    <div class="divisor">
+        <article class="articulo" id="borde">
+            article
+            <br>
+            <section class="seccion">section</section>
+            <section class="seccion">section</section>
+        </article>
+        <aside class="aside" id="borde">
+            aside
+        </aside>
+    </div> <!-- Este div abarca tanto el article como el aside, 
+                estos dos al estar dentro del div pertenecen a el. Para eso sirve el div.
+                Literalmente es una division entre elementos en este caso article y aside,
+                y ahora como article y aside estan dentro del div estos ya son subElementos
+                el div es un elemento pricipal como el nav, 
+                porque estan en la raiz directa del body-->
+    <footer class="pisado" id="borde">En el piso como paloma</footer>
 </body>
 </html>
